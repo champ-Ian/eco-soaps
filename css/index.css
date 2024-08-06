@@ -1,0 +1,135 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Open Sans",sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+:root {
+    --primary-color:#e15578;
+    --dark-color: #230015;
+    --light-color: #ffddf1;
+    --blue-color: #00145b;   
+}
+
+/* Navbar */
+.navbar{
+    display: flex;
+    background: var(--light-color);
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 0px 20px;
+}
+.navbar-image img{
+    width: 120px;
+}
+.main-menu{
+    display: flex;
+    justify-content: space-between;
+    width: 170px;
+}   
+.main-menu a{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    text-decoration: none; 
+}
+.main-menu a div{
+    color: var(--blue-color)
+}
+
+/* Shop */
+.shop{
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.shop img{
+    width: 100%;
+    position: absolute;
+    height: 300px;
+    object-fit: cover;
+}
+.heading{
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 300px;
+    justify-content: space-between;
+}
+.first{
+    color: var(--primary-color);
+    font-size: 1.2rem;
+}
+.second{
+    font-size: 1.6rem;
+    color: var(--dark-color);
+}
+.shop a{
+    margin-top: 20px;
+    position: relative;
+    text-decoration: none;
+    border: 2px solid var(--dark-color);
+    padding: 10px;
+    color: var(--dark-color);
+    width: 120px;
+    text-align: center;
+}
+.imageText{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Cheap */
+.cheap{
+    padding: 40px 0px 20px;
+    background: var(--light-color);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.cheap div{
+    margin: 5px;
+    justify-content: center;
+    display: flex;
+    width: 300px;
+}
+.cheap h3{
+    margin-left: 5px;
+    font-size: 1.3rem;
+}
+.cheap h2{
+    color: var(--primary-color);
+    margin-right: 5px;
+}
+.cheap p{
+    margin: 8px 0px 20px;
+}
+.last-thing{
+    background: #fdff32;
+}
+
+/* Eco */
+.line{
+    border: 7px solid var(--primary-color);
+    width: 70px;
+    margin: 40px 30px 0px;
+}
+.ecoHeader{
+    display: flex;
+    flex-direction: column;
+    margin: 30px 30px 0px;
+}
+.ecoHeader h3{
+    color: var(--primary-color)
+}
+.eco p{
+    margin: 20px 30px 70px;
+}
